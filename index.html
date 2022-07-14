@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infy Services</title>
+    <script src="register.js"></script>
+</head>
+<body>
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7" style="margin-top: 6px;">
+            <br/>
+            <!--<img src="./signup.png.webp">-->
+        </div>
+        <div class="col-sm-5">
+            <form class="form-horizontal" role="form" >
+                <br/>
+                <p > <span align="left" style="font-weight:bold; font-size:18px;">SIGN UP</span></p>
+                <div class="form-group">
+               <div class="col-sm-9">
+                    <input type="text" id="firstName" class="form-control"  onkeyup="validateFName()" placeholder="Enter your first name" >
+                    <div style='font-size:small;color:red' id='firstNameMessage'></div>
+                </div>
+                </div>
+            <div class="form-group">
+                   <div class="col-sm-9">
+                   <input type="text" id="lastName" class="form-control" onkeyup="validateLName()" placeholder="Enter your last name" >
+                   <div style='font-size:small;color:red' id='lastNameMessage'></div>
+                   </div>
+                 </div>
+                 <div class="form-group">
+                <div class="col-sm-9">
+                    <input type="tel" id="mobile" class="form-control" onkeyup="validatePhoneNumber()" placeholder="Enter your mobile number" >
+                    <div style='font-size:small;color:red' id='mobileMessage'></div>
+                </div>
+            <div class="form-group">
+                <div class="col-sm-9">
+                    <input type="email" id="email" class="form-control" onkeypress="validateEmail()" placeholder="Enter your email address">
+                    <div style='font-size:small;color:red' id='emailMessage'></div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-9">
+                    <input type="password" id="password" class="form-control" onkeyup="validatePassword()" placeholder="Enter your password" >
+                    <div style='font-size:small;color:red' id='passwordMessage'></div>
+            </div>
+                <div  style="padding-right:200px;">
+                <span>
+                <input onclick="ValidateFName()" type="submit" id="submit" value="Create account" class="btn btn-default" style="font-weight:bold;font-size:15px; margin-top:16px;" />
+                 &nbsp;&nbsp;
+                <input type="button" id="reset" value="Reset" class="btn btn-default" style="margin-top:16px;font-weight:bold;font-size:15px;" />
+                </span>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
